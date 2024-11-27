@@ -7,14 +7,7 @@ public class FilterImpl implements Filter {
 
         if (object instanceof String) {
             return ((String) object).toUpperCase();
-        } else if (object instanceof Number && (Integer) object % 2 == 0) {
-            return object;
-        } else if (object instanceof Character) {
-            return Character.toUpperCase((Character) object);
-        } else if (object instanceof Boolean && !((Boolean) object)) {
-            return true;
         }
-
         return null;
     }
 
